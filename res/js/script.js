@@ -42,6 +42,22 @@ $(function () {
             $("#courses tbody").append(tr);
         }
 
+        $("#profile-button").click(function (event) {
+            $("#profile-container").addClass('active');
+            $("#profile-button").addClass('active');
+            $("#courses-container").removeClass('active');
+            $("#courses-button").removeClass('active');
+
+        });
+
+        $("#courses-button").click(function (event) {
+            $("#courses-container").addClass('active');
+            $("#courses-button").addClass('active');
+            $("#profile-container").removeClass('active');
+            $("#profile-button").removeClass('active');
+
+        });
+
 
 
 
