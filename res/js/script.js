@@ -61,9 +61,26 @@ $(function () {
         $("#add-course-button").click(function (event) {
             $("#add-course").toggle();
 
-
         });
 
+        $("#save-course").click(function (event) {
+            let number = $('#courses tr').length;
+            let title = $('#title').val();
+            let semester = $('#semester').val();
+            let grade = $('#grade').val();
+
+            let table = $("#courses").find('tbody');
+
+            table.append($('<tr>'));
+            table.append($('<td>').text(number));
+            table.append($('<td>').text(title));
+            table.append($('<td>').text(semester));
+            table.append($('<td>').text(grade));
+
+            $('.input').val('');
+            $('#add-course').hide();
+
+        });
 
 
     }
