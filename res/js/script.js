@@ -60,8 +60,11 @@ $(function () {
 
         $("#add-course-button").click(function (event) {
             $("#add-course").toggle();
+        });
 
-
+        $("#cancel-course").click(function (event) {
+            $(".input").val('');
+            $("#add-course").hide();
         });
 
 
