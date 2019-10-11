@@ -84,6 +84,8 @@ $(function () {
             $('.input').val('');
             $('#add-course').hide();
 
+            courses.push(new Course(title,semester,grade))
+
         });
 
 
